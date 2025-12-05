@@ -6,6 +6,8 @@
     <title>Seu Filme</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrosel.css">
+
 </head>
 <body>
 
@@ -17,22 +19,36 @@
 
         <nav>
             <ul>
-                <li>Início</li>
-                <li>Trending</li>
-                <li>Categorias</li>
-                <li>Sobre</li>
+                <a href="index.html"><li>Início</li></a>
+                <a href="#"><li>Trending</li></a>
+                <a href="#"><li>Categorias</li></a>
+                <a href="#"><li>Sobre</li></a>
             </ul>
         </nav>
 
         <div>
-            <input type="text" placeholder="Digite o nome do filme">
+            <input type="text" placeholder="Digite o nome do filme" class="input-header">
         </div>
 
    </header>
 
+   <section>    
+        <div class="carousel">
+                <div class="slides">
+                    <div class="slide"><img src="./imagens/im5.jpg" alt="Slide 1"></div>
+                    <div class="slide"><img src="./imagens/im4.jpg" alt="Slide 2"></div>
+                    <div class="slide"><img src="./imagens/im6.jpg" alt="Slide 3"></div>
+                </div>
 
+                <button id="prev" class="ctrl"><</button>
+                <button id="next" class="ctrl">></button>
+
+                <div class="dots" aria-hidden="true"></div>
+            </div>
+   </section>
 
 
     <script src="script.js"></script>
+    <script src="carrosel.js"></script>
 </body>
 </html>

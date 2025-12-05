@@ -1,32 +1,66 @@
-
+@import url('template.css');
 /* Página inícial */
 
-*{
-    color: #fff;
+* {
+    color: var(--texto);
+    text-decoration: none;
 }
 
 body{
-    background-color:#3a3d40;
+    background-color: var(--bg);
 }
 
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: solid 1px var(--texto);
+    height: 15vh;
 }
 
 header nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
-    border: solid 1px #fff;
+    width: 50%;
 }
 
 header nav ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: solid 1px #fff;
     gap: 5vw;
+    list-style-type: none;
+}
+
+.input-header{
+    background-color: var(--fonte);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 18vw;
+    height: 29px;
+    padding: 0 15px;
+}
+
+header nav ul li:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.input-header::placeholder{
+    color: var(--fonte);    
+}
+.input-header:focus{
+    outline: none;
+    /* border: 2px solid rgb(255, 255, 255); /* cor personalizada */ 
+    box-shadow: 0 0 5px 1px #9c9c9c;
+}
+
+
+/* Carrossel */
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
