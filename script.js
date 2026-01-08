@@ -26,12 +26,12 @@ function renderFilmes(cat) {
     const lista = filmes[cat];
 
     card.forEach((card, i) => {
-        const filme = lista[i];
 
-        card.style.backgroundImage = `url("${filme.img}")`;
-        card.style.backgroundSize = "cover";
-        card.style.backgroundPosition = "center";
-        card.title = filme.titulo
+        if (!lista[i]) return;
+
+        card.querySelector("img").src = lista[i].img;
+        card.querySelector(".titulo").textContent = lista[i].titulo;
+        card.querySelector(".nota").textContent = `⭐${lista[i].nota}`;
     })
 }
 
