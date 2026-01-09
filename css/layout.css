@@ -31,7 +31,7 @@ header nav ul{
 }
 
 .input-header{
-    background-color: var(--fonte);
+    background-color: var(--bg);
     border: 1px solid #fff;
     border-radius: 10px;
     width: 18vw;
@@ -45,7 +45,7 @@ nav ul li:hover{
 }
 
 .input-header::placeholder{
-    color: var(--fonte);    
+    color: var(--bg);    
 }
 
 .input-header:focus{
@@ -92,4 +92,43 @@ main{
     display: flex;
     gap: 5vw;
     justify-content: flex-end;
+}
+
+
+footer{
+    background-color: var(--bg);
+    color: var(--texto);
+    padding: 30px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-logo{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
 }
