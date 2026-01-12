@@ -1,9 +1,7 @@
-
 // Categorias dos filmes
 
 const filmes = {
     recomendados: [
-        
         { titulo: "Stranger Things", img: "./imagens/strangerCapa.jpg", nota: "8.6"},
         { titulo: "Zootopia 2", img: "./imagens/zootopia.jpg", nota: "7.6" },
         { titulo: "The Beast in Me", img: "./imagens/theBeast.jpg", nota: "7.5" },
@@ -18,14 +16,11 @@ const filmes = {
         { titulo: "O Beijo da Mulher Aranha", img: "./imagens/oBeijo.jpg", nota: "7,6" },
     ],
     acao: [
-        
         { titulo: "Stranger Thinks", img: "strangerCapa.jpg", nota: "7.8"},
         { titulo: "Warcraft", img: "warcraft.jpg", nota: "7.9" },
-        { titulo: "Star Wars", img: "starwars.jpg", nota: "8.5" }
+        { titulo: "Star Wars", img: "starwars.jpg", nota: "8.5" },
     ]
 }
-
-/* document.querySelector("#categorias") */
 
 function renderFilmes(cat) {
     const card = document.querySelectorAll('.rec');

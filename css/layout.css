@@ -4,11 +4,13 @@
     list-style-type: none;
 }
 
-body{
+body {
     background-color: var(--bg);
 }
 
-header{
+/* Header */
+
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,21 +18,21 @@ header{
     height: 10vh;
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 50%;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 5vw;   
+    gap: 5vw;
 }
 
-.input-header{
+.input-header {
     background-color: var(--bg);
     border: 1px solid #fff;
     border-radius: 10px;
@@ -39,36 +41,37 @@ header nav ul{
     padding: 0 15px;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     color: #fff;
     text-decoration: none;
 }
 
-.input-header::placeholder{
-    color: var(--bg);    
+.input-header::placeholder {
+    color: var(--texto);
 }
 
-.input-header:focus{
+.input-header:focus {
     outline: none;
-    /* border: 2px solid rgb(255, 255, 255); /* cor personalizada */ 
     box-shadow: 0 0 5px 1px #9c9c9c;
 }
 
-.sec-carousel{
+.sec-carousel {
 display: flex;
 justify-content: center;
 margin-top: 15px;
 }
 
-main{
+/* Main */
+
+main {
     margin-top: 5vh;
     display: flex;
     flex-wrap: wrap;
     border: solid 1px var(--texto);
 }
 
-.fil-rec{
-    margin-top: 15px;
+.fil-rec {
+    margin-top: 5px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -76,17 +79,17 @@ main{
     border: solid 1px var(--texto);
 }
 
-.fil.tit{
+.fil.tit {
     width: 50%;
     border: solid 1px var(--texto);
 }
 
-.fil-list{
+.fil-list {
     width: 50%;
     border: solid 1px var(--texto);
 }
 
-.fil-rec nav ul{
+.fil-rec nav ul {
     width: 90%;
     border: solid 1px var(--texto);
     display: flex;
@@ -94,8 +97,9 @@ main{
     justify-content: flex-end;
 }
 
+/* Footer */
 
-footer{
+footer {
     background-color: var(--bg);
     color: var(--texto);
     padding: 30px 20px;
@@ -110,7 +114,7 @@ footer{
     align-items: center;
 }
 
-.footer-logo{
+.footer-logo {
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;

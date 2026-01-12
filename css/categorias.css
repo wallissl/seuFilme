@@ -1,21 +1,17 @@
-.filmes{
+.filmes {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     border: solid 1px #bbbbbb;
-    /* height: 400px; */
     width: 100%;
-/*     margin-top: 0.5vh; */
     align-items: center;
     gap: 10px;
 }
 
-.rec{
+.rec {
     border: solid 1px #bbbbbb;
-    /* height: 300px; */
     width: 15%;
-    aspect-ratio: 2 / 3; /* Define a proporção largura/altura do elemento */
- /*    overflow: hidden; */
+    aspect-ratio: 3 / 3; /* Define a proporção largura/altura do elemento */
     border-radius: 10px;
 }
 
@@ -27,12 +23,12 @@
     background-color: #000;
 }
 
-.info{
+.info {
     margin-top: 8px;
     text-align: center;
 }
 
-.titulo{
+.titulo {
     font-size: 14px;
     margin: 4px 0;
 }
@@ -47,13 +43,11 @@
 @media (max-width: 1000px) {
     .rec {
         width: 30%; /* 3 por linha*/
-        
     }
 }
 @media (max-width: 600px) {
     .rec {
         width: 45%; /* 3 por linha*/
     }
-
 }
 
