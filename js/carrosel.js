@@ -81,4 +81,4 @@ window.addEventListener('resize', () => {
 
 // inicializa
 updateSlide();
-startAutoplay();
+/* startAutoplay(); */

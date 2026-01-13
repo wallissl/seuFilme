@@ -61,6 +61,13 @@ justify-content: center;
 margin-top: 15px;
 }
 
+.icon-lupa{
+   
+    width: 20px;
+    stroke: red;
+    
+}
+
 /* Main */
 
 main {
