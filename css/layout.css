@@ -38,12 +38,28 @@ header nav ul {
     border-radius: 10px;
     width: 18vw;
     height: 29px;
-    padding: 0 15px;
+    padding: 0 40px;
 }
 
 nav ul li:hover {
     color: #fff;
     text-decoration: none;
+}
+
+.nav-busca{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.icon-lupa{    
+    position: absolute;
+    height: 21px;
+    top: 15px;
+    left: 13px;
+    width: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
 .input-header::placeholder {
@@ -59,13 +75,6 @@ nav ul li:hover {
 display: flex;
 justify-content: center;
 margin-top: 15px;
-}
-
-.icon-lupa{
-   
-    width: 20px;
-    stroke: red;
-    
 }
 
 /* Main */

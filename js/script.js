@@ -37,3 +37,4 @@ function renderFilmes(cat) {
 }
 
 window.addEventListener("load", () => renderFilmes("recomendados"))
+
