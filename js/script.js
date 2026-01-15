@@ -36,5 +36,34 @@ function renderFilmes(cat) {
     })
 }
 
-window.addEventListener("load", () => renderFilmes("recomendados"))
+const categorias = document.querySelector('.fil-rec');
+categorias.addEventListener('click', (e) => {
+    const li = e.target.closest('li');
+    
+    if(!li) return;
+    
+    const categoria = li.dataset.cat
 
+    renderFilmes(categoria);
+})
+
+window.addEventListener("load", () => renderFilmes("recomendados"));
+
+
+// Menu Mobile
+
+const hamb = document.querySelector('.menu-hamb');
+const menu = document.querySelector('.menu-mobile');
+const overlay = document.querySelector('.menu-overlay');
+
+hamb.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    overlay.classList.toggle('active');
+});
+
+overlay.addEventListener('click', () => {
+    menu.classList.remove('active');
+    overlay.classList.remove('active');
+})
+
+//

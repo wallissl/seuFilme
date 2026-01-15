@@ -16,15 +16,6 @@
             Logo do site
         </div>
 
-        <nav>
-            <ul>
-                <a href="index.html"><li>Início</li></a>
-                <a href="#"><li>Trending</li></a>
-                <a href="#"><li>Categorias</li></a>
-                <a href="#"><li>Sobre</li></a>
-            </ul>
-        </nav>
-
         <div class="nav-busca">
             
             <svg class="icon-lupa">
@@ -33,6 +24,29 @@
             
             <input type="text" placeholder="Digite o nome do filme" class="input-header">
         </div>
+
+        <nav class="nav-desktop">
+            <ul>
+               <li><a href="index.html">Início</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <!-- Menu mobile -->
+        <div class="menu-overlay"></div>
+
+        <nav class="menu-mobile">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+         </nav>
+
+        <button class="menu-hamb">☰</button>
 
    </header>
 
@@ -54,14 +68,14 @@
    <main>
 
         <div class="fil-rec"> 
-            <div class="fil-tit"> Filmes recomendados </div>
+            <div class="fil-tit"> <li data-cat="recomendados">Filmes recomendados</li> </div>
             <div class="fil-list">
                 <nav>
                     <ul>
-                        <a href="#"><li>Ação</li></a>
-                        <a href="#"><li>Comédia</li></a>
-                        <a href="#"><li>Ficção</li></a>
-                        <a href="#"><li>Documentário</li></a>
+                        <li data-cat="acao">Ação</li>
+                        <li data-cat="comedia">Comédia</li>
+                        <li data-cat="ficcao">Ficção</li>
+                        <li data-cat="documentario">Documentário</li>
                     </ul>
                 </nav>
             </div>
