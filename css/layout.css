@@ -156,7 +156,52 @@ li:hover, li a:hover {
         opacity: 1;
         pointer-events: all;
     }
-} /* Fim da versão mobile*/
+}
+
+
+
+
+/* Seção de Filmes Mobile  */
+@media (max-width: 768px) {
+    .fil-rec{
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fil-tit{
+        background-color: aqua;
+        width: 100%;
+        text-align: center;
+    }
+
+    .fil-list{
+        background-color: green;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lista-categorias {
+        display: flex;
+        gap: 12px;
+    }
+
+    .lista-categorias li {
+        white-space: nowrap;
+        padding: 8px 14px;
+        border-radius: 20px;
+        background: #222;
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+
+}
+
+/* Fim da versão mobile*/
+
+
+
 
 
 .sec-carousel {
@@ -188,8 +233,8 @@ main {
     border: solid 1px var(--texto);
 }
 
-.fil-list {
-    width: 50%;
+.fil-list nav {
+
     border: solid 1px var(--texto);
 }
 
