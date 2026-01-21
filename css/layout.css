@@ -182,6 +182,13 @@ li:hover, li a:hover {
         justify-content: center;
     }
 
+    .lista-categorias{
+        width: 100%;
+        padding: 0 25px;
+      
+       
+    }
+
     .lista-categorias {
         display: flex;
         gap: 12px;
