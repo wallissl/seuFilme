@@ -28,8 +28,13 @@ function renderFilmes(cat) {
 
     card.forEach((card, i) => {
 
-        if (!lista[i]) return;
+        if (!lista[i]) {
 
+            card.style.display = 'none';
+            return;
+        }
+
+        card.style.display = '';
         card.querySelector("img").src = lista[i].img;
         card.querySelector(".titulo").textContent = lista[i].titulo;
         card.querySelector(".nota").textContent = `⭐${lista[i].nota}`;
@@ -49,7 +54,6 @@ categorias.addEventListener('click', (e) => {
 
 window.addEventListener("load", () => renderFilmes("recomendados"));
 
-
 // Menu Mobile
 
 const hamb = document.querySelector('.menu-hamb');
@@ -57,7 +61,7 @@ const menu = document.querySelector('.menu-mobile');
 const overlay = document.querySelector('.menu-overlay');
 
 hamb.addEventListener('click', () => {
-    menu.classList.toggle('active');
+    menu.classList.toggle('active'); // Toggle, utilizado para alterar uma classe entre estar presente ou não no elemento.
     overlay.classList.toggle('active');
 });
 
@@ -66,4 +70,20 @@ overlay.addEventListener('click', () => {
     overlay.classList.remove('active');
 })
 
-//
+// Mobile, botões de categorias
+
+const filCategorias = document.querySelectorAll('[data-cat]');
+
+filCategorias.forEach((listaCategorias) => {
+
+    listaCategorias.addEventListener('click', () => {
+
+        filCategorias.forEach((e) => {
+            e.classList.remove('active')
+        })
+
+        listaCategorias.classList.add('active')
+        
+        /* console.log(listaCategorias.dataset.cat) */
+    })
+})

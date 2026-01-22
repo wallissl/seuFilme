@@ -74,8 +74,6 @@ li:hover, li a:hover {
     text-decoration: none;
 }
 
-
-
 /* Meu hamburguer */
 
 .menu-mobile, .menu-overlay, .menu-hamb{
@@ -158,13 +156,9 @@ li:hover, li a:hover {
     }
 }
 
-
-
-
 /* Seção de Filmes Mobile  */
 @media (max-width: 768px) {
     .fil-rec{
-        
         display: flex;
         flex-direction: column;
     }
@@ -178,10 +172,8 @@ li:hover, li a:hover {
         cursor: pointer;
         padding: 10px 20px;
     }
-    
 
     .fil-list{
-        background-color: green;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -205,13 +197,13 @@ li:hover, li a:hover {
         padding: 10px 20px;
     }
 
+   [data-cat].active{
+        background-color: rgb(250, 250, 250);
+        color: var(--bg);
+    }
 }
 
 /* Fim da versão mobile*/
-
-
-
-
 
 .sec-carousel {
 display: flex;
@@ -298,4 +290,3 @@ footer {
 .footer-copy {
     font-size: 0.9rem;
 }
-
