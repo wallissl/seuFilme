@@ -1,0 +1,53 @@
+.filmes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: solid 1px #bbbbbb;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.rec {
+    border: solid 1px #bbbbbb;
+    width: 15%;
+    aspect-ratio: 3 / 3; /* Define a proporção largura/altura do elemento */
+    border-radius: 10px;
+}
+
+.rec img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mostra todo o conteúdo, sem cortar, mantendo a proporção */
+    object-position: center 50%;
+    background-color: #000;
+}
+
+.info {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.nota {
+    font-size: 13px;
+    color: #f5c518;
+}
+
+/* Responsividade */
+
+@media (max-width: 1000px) {
+    .rec {
+        width: 30%; /* 3 por linha*/
+    }
+}
+@media (max-width: 600px) {
+    .rec {
+        width: 45%; /* 3 por linha*/
+    }
+}
+

@@ -47,7 +47,10 @@ function startAutoplay() {
   timer = setInterval(nextSlide, intervalTime);
 }
 function stopAutoplay() {
-  if (timer) { clearInterval(timer); timer = null; }
+  if (timer) { 
+  clearInterval(timer);
+  timer = null;
+  };
 }
 
 // listeners
@@ -67,6 +70,7 @@ carousel.addEventListener('mouseleave', startAutoplay);
 
 // quando redimensionar, recalcula e mantém o slide atual visível com o resize
 let resizeTimer;
+
 window.addEventListener('resize', () => {
   // debouce rápido para evitar chamadas continuas | Atrasar a execução até o usuário “parar de chamar a função” (Só executar a ação depois que o usuário parar de mexer).
   clearTimeout(resizeTimer);

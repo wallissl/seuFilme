@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Filme</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="carrosel.css">
-
+    <link rel="stylesheet" href="./css/style.css">
+   
 </head>
 <body>
 
@@ -17,38 +16,198 @@
             Logo do site
         </div>
 
-        <nav>
-            <ul>
-                <a href="index.html"><li>Início</li></a>
-                <a href="#"><li>Trending</li></a>
-                <a href="#"><li>Categorias</li></a>
-                <a href="#"><li>Sobre</li></a>
-            </ul>
-        </nav>
-
-        <div>
+        <div class="nav-busca">
+            
+            <svg class="icon-lupa">
+                <use href="svg/icons.svg#icon-lupa"></use>
+            </svg>
+            
             <input type="text" placeholder="Digite o nome do filme" class="input-header">
         </div>
 
+        <nav class="nav-desktop">
+            <ul>
+               <li><a href="index.html">Início</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <!-- Menu mobile -->
+        <div class="menu-overlay"></div>
+
+        <nav class="menu-mobile">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+         </nav>
+
+        <button class="menu-hamb">☰</button>
+
    </header>
 
-   <section>    
+   <section class="sec-carousel">    
         <div class="carousel">
-                <div class="slides">
-                    <div class="slide"><img src="./imagens/stranger3.jpg" alt="Slide 1"></div>
-                    <div class="slide"><img src="./imagens/diversos3.jpg" alt="Slide 2"></div>
-                    <div class="slide"><img src="./imagens/diversos4.jpg" alt="Slide 3"></div>
-                </div>
-
-                <button id="prev" class="ctrl"><</button>
-                <button id="next" class="ctrl">></button>
-
-                <div class="dots" aria-hidden="true"></div>
+            <div class="slides">
+                <div class="slide"><img src="./imagens/diversos.jpg" alt="Slide 1"></div>
+                <div class="slide"><img src="./imagens/diversos2.jpg" alt="Slide 2"></div>
+                <div class="slide"><img src="./imagens/diversos3.jpg" alt="Slide 3"></div>
+                <div class="slide"><img src="./imagens/diversos4.jpg" alt="Slide 4"></div>
             </div>
+
+            <button id="prev" class="ctrl"><</button>
+            <button id="next" class="ctrl">></button>
+            <div class="dots" aria-hidden="true"></div>
+        </div>
    </section>
 
+   <main>
 
-    <script src="script.js"></script>
-    <script src="carrosel.js"></script>
+        <div class="fil-rec"> 
+
+            <div class="fil-tit"> <li data-cat="recomendados">Filmes recomendados</li> </div>
+
+            <div class="fil-list">
+                <nav>
+                    <ul class="lista-categorias">
+                        <li data-cat="acao">Ação</li>
+                        <li data-cat="comedia">Comédia</li>
+                        <li data-cat="ficcao">Ficção</li>
+                        <li data-cat="documentario">Documentário</li>
+                    </ul>
+                </nav>
+                
+            </div>
+
+        </div>
+
+        <section class="filmes">
+
+            <div class="rec">
+                <img>
+                <div class="info">
+                    <h3 class="titulo"></h3>
+                    <span class="nota"></span>
+                </div>
+            </div>
+
+            <div class="rec">
+                <img>
+                <div class="info">
+                    <h3 class="titulo"></h3>
+                    <span class="nota"></span>
+                </div>
+            </div>
+
+            <div class="rec">
+                <img>
+                <div class="info">
+                    <h3 class="titulo"></h3>
+                    <span class="nota"></span>
+                </div>
+            </div>
+
+            <div class="rec">
+                <img>
+                <div class="info">
+                    <h3 class="titulo"></h3>
+                    <span class="nota"></span>
+                </div>
+            </div>
+
+            <div class="rec">
+                <img>
+                <div class="info">
+                    <h3 class="titulo"></h3>
+                    <span class="nota"></span>
+                </div>
+            </div>
+
+            <div class="rec">
+                <img>
+                <div class="info">
+                    <h3 class="titulo"></h3>
+                    <span class="nota"></span>
+                </div>
+            </div>
+            
+             <div class="rec">
+                <img>
+                <div class="info">
+                    <h3 class="titulo"></h3>
+                    <span class="nota"></span>
+                </div>
+            </div>
+
+            <div class="rec">
+                <img>
+                <div class="info">
+                    <h3 class="titulo"></h3>
+                    <span class="nota"></span>
+                </div>
+            </div>
+
+            <div class="rec">
+                <img>
+                <div class="info">
+                    <h3 class="titulo"></h3>
+                    <span class="nota"></span>
+                </div>
+            </div>
+
+            <div class="rec">
+                <img>
+                <div class="info">
+                    <h3 class="titulo"></h3>
+                    <span class="nota"></span>
+                </div>
+            </div>
+
+            <div class="rec">
+                <img>
+                <div class="info">
+                    <h3 class="titulo"></h3>
+                    <span class="nota"></span>
+                </div>
+            </div>
+
+            <div class="rec">
+                <img>
+                <div class="info">
+                    <h3 class="titulo"></h3>
+                    <span class="nota"></span>
+                </div>
+            </div>  
+
+        </section>
+     
+   </main>
+
+   <footer>
+
+    <div class="footer-container">
+        <p class="footer-logo"> 🎬 Seu Filme </p>
+
+        <nav class="footer-nav">
+            <a href="#">Início</a>
+            <a href="#">Trending</a>
+            <a href="#">Categorias</a>
+            <a href="#">Sobre</a>
+        </nav>
+
+        <p class="footer-copy">
+            © 2026 Seu Filme • Todos os direitos reservados • Wallis Silva
+        </p>
+    </div>
+    
+   </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/carrosel.js"></script>
+    
 </body>
 </html>
