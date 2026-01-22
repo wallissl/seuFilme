@@ -164,16 +164,21 @@ li:hover, li a:hover {
 /* Seção de Filmes Mobile  */
 @media (max-width: 768px) {
     .fil-rec{
-        background-color: red;
+        
         display: flex;
         flex-direction: column;
     }
 
-    .fil-tit{
-        background-color: aqua;
+    .fil-tit li{
         width: 100%;
         text-align: center;
+        padding: 8px 14px;
+        border-radius: 20px;
+        background: #222;
+        cursor: pointer;
+        padding: 10px 20px;
     }
+    
 
     .fil-list{
         background-color: green;
@@ -185,8 +190,6 @@ li:hover, li a:hover {
     .lista-categorias{
         width: 100%;
         padding: 0 25px;
-      
-       
     }
 
     .lista-categorias {
@@ -195,7 +198,6 @@ li:hover, li a:hover {
     }
 
     .lista-categorias li {
-        white-space: nowrap;
         padding: 8px 14px;
         border-radius: 20px;
         background: #222;
