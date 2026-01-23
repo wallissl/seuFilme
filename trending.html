@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Filme</title>
+    <title> Trending • Seu Filme</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/trending.css">
+    <link rel="stylesheet" href="css/variaveis.css">
    
 </head>
 <body>
 
-   <header>
+   <!-- <header>
 
         <div class="logo">
             Seu Filme
@@ -36,10 +37,10 @@
                 <li><a href="#">Categorias</a></li>
                 <li><a href="#">Sobre</a></li>
             </ul>
-        </nav>
+        </nav> -->
 
         <!-- Menu mobile -->
-        <div class="menu-overlay"></div>
+        <!-- <div class="menu-overlay"></div>
 
         <nav class="menu-mobile">
             <ul>
@@ -52,26 +53,60 @@
 
         <button class="menu-hamb">☰</button>
 
+   </header> -->
+
+   <header class="trending-header">
+        <h1> Trending Agora </h1>
+        <p> Os filmes mais comentados do momento </p>
    </header>
 
-   <footer>
+   <main>
+        <section class="trending-item" style="background-image: url('imagens/oAgenteSecreto2.jpg')">
+            <div class="trending-conteudo">
+                <span class="trend-film"> #1 Trending </span>
+                <h2>O Agente Secreto </h2>
+                <p class="nota">⭐ 7.8</p>
+                <button class="btn"> Ver detalhes </button>
+            </div>
+        </section>
 
-    <div class="footer-container">
-        <p class="footer-logo"> 🎬 Seu Filme </p>
+        <section class="trending-item" style="background-image: url('imagens/pecadores.jpg')">
+            <div class="trending-conteudo">
+                <span class="trend-film"> #2 Trending </span>
+                <h2> Pecadores </h2>
+                <p class="nota">⭐ 7.5</p>
+                <button class="btn"> Ver detalhes </button>
+            </div>
+        </section>
 
-        <nav class="footer-nav">
-            <a href="index.html">Início</a>
-            <a href="trending.html">Trending</a>
-            <a href="#">Categorias</a>
-            <a href="#">Sobre</a>
-        </nav>
+        <section class="trending-item" style="background-image: url('imagens/oAgenteSecreto2.jpg')">
+            <div class="trending-conteudo">
+                <span class="trend-film"> #1 Trending </span>
+                <h2>O Agente Secreto </h2>
+                <p class="nota">⭐ 7.8</p>
+                <button class="btn"> Ver detalhes </button>
+            </div>
+        </section>
+   </main>
 
-        <p class="footer-copy">
-            © 2026 Seu Filme • Todos os direitos reservados • Wallis Silva
-        </p>
-    </div>
+   <!--  <footer>
+
+        <div class="footer-container">
+            <p class="footer-logo"> 🎬 Seu Filme </p>
+
+            <nav class="footer-nav">
+                <a href="index.html">Início</a>
+                <a href="trending.html">Trending</a>
+                <a href="#">Categorias</a>
+                <a href="#">Sobre</a>
+            </nav>
+
+            <p class="footer-copy">
+                © 2026 Seu Filme • Todos os direitos reservados • Wallis Silva
+            </p>
+        </div>
     
-   </footer>
+    </footer> -->
 
     <script src="js/script.js"></script>
     
