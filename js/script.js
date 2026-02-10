@@ -9,7 +9,7 @@ const filmes = {
         { titulo: "Avatar: Fogo e Cinzas", img: "./imagens/avatarFogo.jpg", nota: "7.4" },
         { titulo: "Wicked 2", img: "./imagens/wicked2.jpg", nota: "7.0" },
         { titulo: "O Diabo Veste Prada 2", img: "imagens/vestePrada.jpg ", nota: "7.8"},
-        { titulo: "Minions 3", img: "./imagens/martySupreme.jpg", nota: "7.5" },
+        { titulo: "Marty Supreme", img: "./imagens/martySupreme.jpg", nota: "7.5" },
         { titulo: "Minions 3", img: "./imagens/minions3.jpg", nota: "8.0" },
         { titulo: "The Super Mario Galaxy", img: "./imagens/marioSuper.jpg", nota: "7.9" },
         { titulo: "Pânico 7", img: "./imagens/panico7.jpg", nota: "7.2" },
@@ -38,6 +38,8 @@ function renderFilmes(cat) {
         card.querySelector("img").src = lista[i].img;
         card.querySelector(".titulo").textContent = lista[i].titulo;
         card.querySelector(".nota").textContent = `⭐${lista[i].nota}`;
+        card.querySelector("img").alt = `Capa do filme: ${lista[i].titulo}`;
+        
     })
 }
 

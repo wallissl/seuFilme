@@ -2,8 +2,11 @@
 
 @import url("layout.css");
 
+@import url("mobile.css");
+
 @import url("carosel.css");
 
-@import url("categorias.css");
+@import url("filmes.css");
 
 @import url("trending.css");
+

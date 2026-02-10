@@ -8,8 +8,8 @@ body {
     background-color: var(--bg);
 }
 
-/* Header */
 
+/* Header */
 header {
     display: flex;
     justify-content: space-around;
@@ -24,8 +24,8 @@ header {
     font-family: "Bebas Neue", sans-serif;
 }
 
-/* Barra de busca */
 
+/* Menu Nav e input de busca */
 .nav-busca{
     display: flex;
     align-items: center;
@@ -42,6 +42,15 @@ header {
     pointer-events: none;
 }
 
+.input-header {
+    background-color: var(--bg);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 18vw;
+    height: 29px;
+    padding: 0 40px;
+}
+
 .input-header::placeholder {
     color: var(--texto);
 }
@@ -51,7 +60,8 @@ header {
     box-shadow: 0 0 5px 1px #9c9c9c;
 }
 
-/* Menu principal */
+
+/* menu de navegação */
 header nav {
     display: flex;
     justify-content: space-around;
@@ -66,150 +76,14 @@ header nav ul {
     gap: 5vw;
 }
 
-.input-header {
-    background-color: var(--bg);
-    border: 1px solid #fff;
-    border-radius: 10px;
-    width: 18vw;
-    height: 29px;
-    padding: 0 40px;
-}
-
 li:hover, li a:hover {
     color: #fff;
     text-decoration: none;
 }
 
-/* Meu hamburguer */
-
 .menu-mobile, .menu-overlay, .menu-hamb{
     display: none;
-}
-
-@media (max-width: 768px) {
-    body{
-        padding-top: 70px;
-    }
-    header{
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 3000;
-        background-color: var(--bg);
-    }
-
-    .menu-hamb {
-        display: block;
-        font-size: 26px;
-        background: none;
-        border: none;
-        color: var(--texto);
-        cursor: pointer;
-    }
-
-    .nav-desktop{
-        display: none;
-    }
-
-    .input-header{
-        width: 100%;
-        max-width: 260px;
-    }
-
-    /* Menu deslizando da direita */
-
-    .menu-mobile{
-        display: block;
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100vh;
-        width: 150px;
-        background: #111;
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-        z-index: 4000;
-        padding: 50px 30px;
-    }
-
-    .menu-mobile.active {
-        transform: translateX(0);
-    }
-
-    .menu-mobile ul {
-        list-style: none;
-        display: flex;
-        align-items: start;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    /* Overlay */
-
-    .menu-overlay {
-        display: block;
-        position: fixed;
-        inset: 0; /* Propriedade para distâncias de deslocamento, top, right, bottom, left */
-        background-color: rgba(0,0,0,0.5);
-        opacity: 0;
-        pointer-events: none; /* Torna o elemento invisivel para mouse */
-        transition: opacity 0.3s;
-        z-index: 3500;
-    }
-    .menu-overlay.active {
-        opacity: 1;
-        pointer-events: all;
-    }
-}
-
-/* Seção de Filmes Mobile  */
-@media (max-width: 768px) {
-    .fil-rec{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .fil-tit li{
-        width: 100%;
-        text-align: center;
-        padding: 8px 14px;
-        border-radius: 20px;
-        background: #222;
-        cursor: pointer;
-        padding: 10px 20px;
-    }
-
-    .fil-list{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .lista-categorias{
-        width: 100%;
-        padding: 0 25px;
-    }
-
-    .lista-categorias {
-        display: flex;
-        gap: 12px;
-    }
-
-    .lista-categorias li {
-        padding: 8px 14px;
-        border-radius: 20px;
-        background: #222;
-        cursor: pointer;
-        padding: 10px 20px;
-    }
-
-   [data-cat].active{
-        background-color: rgb(250, 250, 250);
-        color: var(--bg);
-    }
-}
-
-/* Fim da versão mobile*/
+} /* Ocultar menu versão mobile */
 
 .sec-carousel {
 display: flex;
@@ -217,8 +91,8 @@ justify-content: center;
 margin-top: 15px;
 }
 
-/* Main */
 
+/* Main: Categorias*/
 main {
     margin-top: 5vh;
     display: flex;
@@ -235,19 +109,12 @@ main {
     border: solid 1px var(--texto);
 }
 
-.fil.tit {
-    width: 50%;
-    border: solid 1px var(--texto);
-}
-
 .fil-list nav {
-
     border: solid 1px var(--texto);
 }
 
 .fil-rec nav ul {
-    width: 90%;
-    border: solid 1px var(--texto);
+    width: 100%;
     display: flex;
     gap: 5vw;
     justify-content: flex-end;
@@ -257,10 +124,13 @@ main {
     cursor: pointer;
 }
 
-/* Footer */
 
+/* Main: Filmes, está em arquivo CSS separado - filmes.css */
+
+
+/* Footer */
 footer {
-    background-color: var(--bg);
+    background-color: ;
     color: var(--texto);
     padding: 30px 20px;
 }

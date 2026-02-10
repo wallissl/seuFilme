@@ -5,13 +5,92 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: var(--bg);
-}
-
 /* Header */
 
 .trending-header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 30px 20px;
+    background: #111;
+}
+
+.trending-header h1 {
+    font-size: 2.5rem;
+}
+
+.trending-header p {
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* Trending section */
+.trending-item {
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+}
+
+.trending-item, .oAgente{
+    background-position: top;
+}
+
+/* Conteúdo */
+.trending-conteudo {
+    width: 100%;
+    padding: 40px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0)
+    );
+}
+
+.trend-film {
+    color: #ff3b3b;
+    margin: 10px 0;
+}
+
+.trending-conteudo h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px 0;
+}
+
+.nota {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background: #ff3b3b;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #ff1f1f;
+}
+
+/* Intercalar layout */
+.trending-item:nth-child(even) {
+    justify-content: flex-end;
+    text-align: right;
+} /* Even é uma palavra-chave que significa todos os elementos par*/
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .trending-item {
+        background-attachment: scroll;
+        min-height: 70vh;
+    }
+
+    .trending-conteudo h2 {
+        font-size: 1.8rem;
+    }
 }
