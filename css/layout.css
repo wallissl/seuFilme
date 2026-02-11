@@ -130,7 +130,6 @@ main {
 
 /* Footer */
 footer {
-    background-color: ;
     color: var(--texto);
     padding: 30px 20px;
 }
@@ -156,9 +155,9 @@ footer {
 }
 
 .footer-nav a {
-    color: #fff;
-    text-decoration: none;
+    color: #ffffff;
 }
+
 .footer-nav a:hover {
     text-decoration: underline;
 }
