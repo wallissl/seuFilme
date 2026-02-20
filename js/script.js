@@ -47,14 +47,14 @@ const categorias = document.querySelector('.fil-rec');
     if(categorias){
 
     categorias.addEventListener('click', (e) => {
-    const li = e.target.closest('li');
+    const li = e.target.closest('li'); 
     
     if(!li) return;
     
     const categoria = li.dataset.cat
 
     renderFilmes(categoria);
-})}
+})} /* closest - A partir de onde o clique aconteceu, encontre o <li> mais próximo acima */ 
 
 window.addEventListener("load", () => renderFilmes("recomendados"));
 

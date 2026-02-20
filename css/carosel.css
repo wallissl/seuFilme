@@ -4,6 +4,7 @@
   height: 25vw;
   position: relative;
   overflow: hidden;
+  position: -webkit-sticky;
   border-radius: 10px;
 }
 
