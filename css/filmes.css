@@ -6,6 +6,7 @@
     width: 100%;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
 .rec {
@@ -42,12 +43,12 @@
 
 @media (max-width: 1000px) {
     .rec {
-        width: 30%; /* 3 por linha*/
+        width: 30%; /* 3 imagens por linha*/
     }
 }
 @media (max-width: 600px) {
     .rec {
-        width: 45%; /* 3 por linha*/
+        width: 45%; /* 2 imagens por linha*/
     }
 }
 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trending • Seu Filme</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   <header>
+
+        <div class="logo">
+            Seu Filme
+        </div>
+
+        <div class="nav-busca">
+            
+            <svg class="icon-lupa">
+                <use href="svg/icons.svg#icon-lupa"></use>
+            </svg>
+            
+            <input type="text" placeholder="Digite o nome do filme" class="input-header">
+        </div>
+
+        <!-- Menu desktop -->
+        <nav class="nav-desktop">
+            <ul>
+               <li><a href="index.html"> Início </a></li>
+                <li><a href="trending.html"> Trending </a></li>
+                <li><a href="categorias.html"> Categorias </a></li>
+                <li><a href="sobre.html"> Sobre </a></li>
+            </ul>
+        </nav>
+
+        <!-- Menu mobile -->
+        <nav class="menu-mobile">
+            <ul>
+                <li><a href="index.html"> Início </a></li>
+                <li><a href="trending.html"> Trending </a></li>
+                <li><a href="categorias.html"> Categorias </a></li>
+                <li><a href="sobre.html"> Sobre </a></li>
+            </ul>
+         </nav>
+
+        <button class="menu-hamb"> ☰ </button>
+
+        <div class="menu-overlay"></div> <!-- Criar sobreposição quando o menu for acionado -->
+
+   </header>
+
+   <div class="trending-header">
+        <h1> Trending Agora </h1>
+        <p> Os filmes mais comentados do momento </p>
+   </div>
+
+   <div>
+        <section class="trending-item oAgente" style="background-image: url('imagens/oAgenteSecreto.jpg')">
+            <div class="trending-conteudo">
+                <span class="trend-film"> #1 Trending </span>
+                <h2> O Agente Secreto </h2>
+                <p class="nota">⭐ 7.6</p>
+                <button class="btn"> Ver detalhes </button>
+            </div>
+        </section>
+
+        <section class="trending-item" style="background-image: url('imagens/pecadores.jpg')">
+            <div class="trending-conteudo">
+                <span class="trend-film"> #2 Trending </span>
+                <h2> Pecadores </h2>
+                <p class="nota">⭐ 7.4</p>
+                <button class="btn"> Ver detalhes </button>
+            </div>
+        </section>
+
+        <section class="trending-item" style="background-image: url('imagens/avatar.jpg')">
+            <div class="trending-conteudo">
+                <span class="trend-film"> #3 Trending </span>
+                <h2> Avatar: Fogo e Cinzas </h2>
+                <p class="nota">⭐ 7.8</p>
+                <button class="btn"> Ver detalhes </button>
+            </div>
+        </section>
+   </div>
+
+    <footer>
+
+        <div class="footer-container">
+            <p class="footer-logo"> 🎬 Seu Filme </p>
+
+            <nav class="footer-nav">
+                <a href="index.html">Início</a>
+                <a href="trending.html">Trending</a>
+                <a href="categorias.html">Categorias</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+
+            <p class="footer-copy">
+                © 2026 Seu Filme • Todos os direitos reservados • Wallis Silva
+            </p>
+        </div>
+    
+    </footer> 
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

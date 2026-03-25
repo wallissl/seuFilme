@@ -1,0 +1,119 @@
+/* Header: mobile */
+@media (max-width: 1024px) {
+    
+    body{
+        padding-top: 70px;
+    }
+
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3000;
+        background-color: var(--bg);
+        display: flex;
+        justify-content: space-around;
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 7vw;
+        margin: 15px;
+    }
+
+    .input-header{
+        width: 80%;
+        max-width: 260px;
+    }
+
+    .nav-desktop{
+        display: none;
+    }
+    
+    /* Menu deslizando da direita */
+    .menu-mobile{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 150px;
+        background: #111;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 4000;
+        padding: 50px 30px;
+    }
+
+    .menu-mobile.active {
+        transform: translateX(0);
+    }
+
+    .menu-mobile ul {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Menu hambuerguer */
+    .menu-hamb {
+        display: block;
+        font-size: 26px;
+        background: none;
+        border: none;
+        color: var(--texto);
+        cursor: pointer;
+        position: relative;
+        right: 10px;
+    }
+
+    /* Overlay */
+    .menu-overlay {
+        display: block;
+        position: fixed;
+        inset: 0; /* Propriedade para distâncias de deslocamento, top, right, bottom, left */
+        background-color: rgba(0,0,0,0.5);
+        opacity: 0;
+        pointer-events: none; /* Torna o elemento invisivel para mouse */
+        transition: opacity 0.3s;
+        z-index: 3500;
+    }
+
+    .menu-overlay.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    /* Categorias: Mobile */
+    .fil-rec {
+        display: flex;
+        overflow: scroll;
+        width: 100%;
+    }
+
+    .fil-tit li{
+        border-radius: 20px;
+        background: #222;
+        cursor: pointer;
+        padding: 10px 20px;
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .lista-categorias {        
+        overflow-x: scroll;
+    }
+    
+    .lista-categorias li {
+        border-radius: 20px;
+        background: #222;
+        cursor: pointer;
+        padding: 10px 15px;
+    }
+
+   [data-cat].active{
+        background-color: rgb(250, 250, 250);
+        color: var(--bg);
+    }
+}
