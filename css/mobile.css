@@ -1,5 +1,5 @@
 /* Header: mobile */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     
     body{
         padding-top: 70px;
@@ -11,10 +11,18 @@
         width: 100%;
         z-index: 3000;
         background-color: var(--bg);
+        display: flex;
+        justify-content: space-around;
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 7vw;
+        margin: 15px;
     }
 
     .input-header{
-        width: 100%;
+        width: 80%;
         max-width: 260px;
     }
 
@@ -56,6 +64,8 @@
         border: none;
         color: var(--texto);
         cursor: pointer;
+        position: relative;
+        right: 10px;
     }
 
     /* Overlay */
@@ -74,32 +84,32 @@
         opacity: 1;
         pointer-events: all;
     }
-}
 
-/* Categorias: Mobile */
-@media (max-width: 768px) {
-    
-    .fil-rec{
+    /* Categorias: Mobile */
+    .fil-rec {
         display: flex;
-        flex-direction: column;
+        overflow: scroll;
+        width: 100%;
     }
 
     .fil-tit li{
-        width: 100%;
-        text-align: center;
-        padding: 8px 14px;
         border-radius: 20px;
         background: #222;
         cursor: pointer;
         padding: 10px 20px;
-        margin-bottom: 5px;
+        width: 200px;
+        margin-right: 10px;
     }
 
+    .lista-categorias {        
+        overflow-x: scroll;
+    }
+    
     .lista-categorias li {
         border-radius: 20px;
         background: #222;
         cursor: pointer;
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
 
    [data-cat].active{
