@@ -124,6 +124,10 @@ main {
     cursor: pointer;
 }
 
+.recomendadosMobile {
+    display: none;
+}
+
 
 /* Main: Filmes, está em arquivo CSS separado - filmes.css */
 
@@ -164,4 +168,5 @@ footer {
 
 .footer-copy {
     font-size: 0.9rem;
+    text-align: center;
 }
