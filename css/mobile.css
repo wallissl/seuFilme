@@ -89,8 +89,12 @@
     .fil-rec {
         display: flex;
         overflow: scroll;
-        width: 100%;
+        width: max-content;
     }
+
+    /* .fil-tit {
+        width: 500px;
+    } */
 
     .fil-tit li{
         border-radius: 20px;
@@ -98,11 +102,13 @@
         cursor: pointer;
         padding: 10px 20px;
         width: 200px;
-        margin-right: 10px;
+        
+        
     }
 
-    .lista-categorias {        
-        overflow-x: scroll;
+    .lista-categorias li:first-child {        
+        margin-left: 10px;
+        
     }
     
     .lista-categorias li {
