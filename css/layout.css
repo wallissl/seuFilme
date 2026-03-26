@@ -2,6 +2,7 @@
     color: var(--texto);
     text-decoration: none;
     list-style-type: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -89,12 +90,13 @@ li:hover, li a:hover {
 display: flex;
 justify-content: center;
 margin-top: 15px;
+height: auto;
 }
 
 
 /* Main: Categorias*/
 main {
-    margin-top: 5vh;
+    margin-top: 4vh;
     display: flex;
     flex-wrap: wrap;
     border: solid 1px var(--texto);
