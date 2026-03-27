@@ -117,7 +117,7 @@
         background: #222;
         cursor: pointer;
         padding: 10px 15px;
-        color: rgb(155, 47, 182);
+        color: rgb(192, 190, 69);
     }
 
     .recomendadosMobile {
@@ -148,12 +148,11 @@
 @media only screen and (min-device-width: 375px) and (max-device-width: 1023px) 
   and (-webkit-min-device-pixel-ratio: 2) {
     .carousel {
-        max-width:1200px;
         width: 100%;
-        aspect-ratio: 16 / 9; /* controla proporção */
+        aspect-ratio: 16 / 6; /* controla proporção */
         position: relative;
         overflow: hidden;
-        object-fit: cover;
-        border-radius: 10px;    
+        position: -webkit-sticky;
+        border-radius: 10px;
     }
 }
