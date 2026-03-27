@@ -117,7 +117,7 @@
         background: #222;
         cursor: pointer;
         padding: 10px 15px;
-        color: rgb(199, 196, 54);
+        color: rgb(37, 220, 233);
     }
 
     .recomendadosMobile {
@@ -142,17 +142,20 @@
         overflow: hidden;
         position: -webkit-sticky;
         border-radius: 10px;
+        height: 40vw;
     }
 
     .slide {
         height: auto;
         flex-shrink: 0; /* Ótimiza o navegador para realizar a animação sem deixar o flexbox diminuir os itens por padrão*/
+         border-radius: 10px;
     }
     .slide img {
         width: 100vw;
         height: 100%;
         object-fit: contain; /* Preencher o espaço disponível sem deformar */
         display: block; /* Não permitir que o elemento tenha comportamento inline*/
+        border-radius: 10px;
     }
 }
 

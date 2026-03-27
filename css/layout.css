@@ -96,7 +96,7 @@ height: auto;
 
 /* Main: Categorias*/
 main {
-    margin-top: 4vh;
+    margin-top: 1vh;
     display: flex;
     flex-wrap: wrap;
     border: solid 1px var(--texto);
