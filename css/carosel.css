@@ -21,7 +21,7 @@
 
 .slide {
   min-width: 100%; /* cada slide ocupa 100% do container */
-  height: 100%;
+  height: auto;
   flex-shrink: 0; /* Ótimiza o navegador para realizar a animação sem deixar o flexbox diminuir os itens por padrão*/
 }
 
