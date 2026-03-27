@@ -26,9 +26,9 @@
 }
 
 .slide img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover; /* Preencher o espaço disponível sem deformar */
+  object-fit: contain; /* Preencher o espaço disponível sem deformar */
   display: block; /* Não permitir que o elemento tenha comportamento inline*/
 }
 

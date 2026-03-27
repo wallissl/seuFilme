@@ -1,5 +1,5 @@
 /* Header: mobile */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     
     body{
         padding-top: 70px;
@@ -117,7 +117,7 @@
         background: #222;
         cursor: pointer;
         padding: 10px 15px;
-        color: rgb(75, 177, 84);
+        color: rgb(199, 196, 54);
     }
 
     .recomendadosMobile {
@@ -132,33 +132,28 @@
         color: var(--bg);
     }
 
-    .sec-carousel {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px;
-     /*    height: 125px; */
-       /*  background-color: red; */
-
+   
+    
+    .carousel {
+        max-width:1200px;
+        width: 100vw;
+        aspect-ratio: 4 / 3; /* controla proporção */
+        position: relative;
+        overflow: hidden;
+        position: -webkit-sticky;
+        border-radius: 10px;
     }
 
-    .carousel {
-        width: 100%;
-        /* Removemos o aspect-ratio fixo ou usamos um mais alto (ex: 4/3) */
-        aspect-ratio: 4 / 3; 
+    .slide {
         height: auto;
-        border-radius: 8px;
+        flex-shrink: 0; /* Ótimiza o navegador para realizar a animação sem deixar o flexbox diminuir os itens por padrão*/
     }
     .slide img {
-        width: 100%;
+        width: 100vw;
         height: 100%;
-        /* O SEGREDO ESTÁ AQUI: */
-        object-fit: contain; 
-        /* Cor de fundo opcional para não ficar buraco branco nas laterais */
-        background-color: #f0f0f0; 
+        object-fit: contain; /* Preencher o espaço disponível sem deformar */
+        display: block; /* Não permitir que o elemento tenha comportamento inline*/
     }
-
-    
 }
 
  
