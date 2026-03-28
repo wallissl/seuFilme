@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    border: solid 1px #bbbbbb;
+    
     width: 100%;
     align-items: center;
     gap: 10px;
@@ -10,7 +10,7 @@
 }
 
 .rec {
-    border: solid 1px #bbbbbb;
+    
     width: 15%;
     aspect-ratio: 3 / 3; /* Define a proporção largura/altura do elemento */
     border-radius: 10px;

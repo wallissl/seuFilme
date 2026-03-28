@@ -90,34 +90,25 @@
         display: flex;
         overflow: scroll;
         width: max-content;
+        padding-bottom: 10px;
+        
     }
 
     .fil-tit {
         display: none;
     }
 
-    
-
- /*    .fil-tit li{
-        border-radius: 20px;
-        background: #222;
-        cursor: pointer;
-        padding: 10px 20px;
-        width: 200px;
-        margin-right: 10px;
-    } */
-/* 
-    .lista-categorias li:first-child {        
-       
-        
+    .fil-rec {
+        background: none;
     }
-     */
+
+    
     .lista-categorias li {
         border-radius: 20px;
         background: #222;
         cursor: pointer;
         padding: 10px 15px;
-        color: rgb(221, 169, 57);
+        color: var(--texto);
     }
 
     .recomendadosMobile {
@@ -157,6 +148,22 @@
         object-fit: cover;
         display: block; /* Não permitir que o elemento tenha comportamento inline*/
         
+    }
+
+    .fil-list::-webkit-scrollbar {
+        width: 0; /* Largura da barra */
+            
+    }
+
+        .fil-list::-webkit-scrollbar-track {
+        background: var(--texto); /* Cor da trilha */
+        border-radius: 20px;
+    }
+
+    .fil-list::-webkit-scrollbar-thumb {
+        background-color: var(--bg); /* Cor da barrinha (thumb) */
+        border-radius: 20px; /* Arredondar a barrinha */
+        border: 1px solid #e0e0e0; /* Borda ao redor da barrinha */
     }
 }
 
