@@ -10,7 +10,7 @@ const total = slides.length;
 const intervalTime = 3000;
 let timer = null;
 
-// cria dots
+// Cria dots
 for (let i = 0; i < total; i++) {
   const dot = document.createElement('div');
   dot.classList.add('dot');
@@ -21,16 +21,16 @@ for (let i = 0; i < total; i++) {
 const dots = document.querySelectorAll('.dot');
 
 function updateSlide() {
-  // calcula largura atual de um slide em px (mais robusto que %)
+  // Calcula largura atual de um slide em px
   const slideWidth = slides[0].getBoundingClientRect().width; // Função nativa do javascript que retorna um objeto com medidas do objeto na tela.
-  slidesContainer.style.transform = `translateX(-${index * slideWidth}px)`; // Aqui vamos utilizar um cálculo para mover os slides para a esquerda: posição = - (índice do slide atual × largura do slide) | O - é para mover para a esquerda.
+  slidesContainer.style.transform = `translateX(-${index * slideWidth}px)`; // Aqui vamos utilizar um cálculo para mover os slides para a esquerda: posição = - (índice do slide atual × largura do slide) | O operador de subtração (-) é para mover para a esquerda.
 
-  // atualiza dots
+  // Atualiza dots
   dots.forEach(d => d.classList.remove('active')); // Remover a classe do dots atual
   if (dots[index]) dots[index].classList.add('active'); // Adicionar novamente para o dots da vez
 }
 
-// next / prev
+// Next / Prev
 function nextSlide() {
   index = (index + 1) % total;
   updateSlide();
@@ -40,8 +40,7 @@ function prevSlide() {
   updateSlide();
 } /* Aqui acontece a mesma coisa, com a diferença de estarmos subritraindo um número antes do mesmo cálculo para ele retornar para o slide anterior */
 
-
-// autoplay
+// Autoplay
 function startAutoplay() {
   stopAutoplay();
   timer = setInterval(nextSlide, intervalTime);
@@ -68,17 +67,17 @@ dots.forEach(dot => {
 carousel.addEventListener('mouseenter', stopAutoplay);
 carousel.addEventListener('mouseleave', startAutoplay);
 
-// quando redimensionar, recalcula e mantém o slide atual visível com o resize
+// Quando redimensionar, recalcula e mantém o slide atual visível com o resize
 let resizeTimer;
 
 window.addEventListener('resize', () => {
-  // debouce rápido para evitar chamadas continuas | Atrasar a execução até o usuário “parar de chamar a função” (Só executar a ação depois que o usuário parar de mexer).
+  // Debouce rápido para evitar chamadas continuas | Atrasar a execução até o usuário “parar de chamar a função” (Só executar a ação depois que o usuário parar de mexer).
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
     updateSlide();
   }, 50);
-}); // Vamos utilizar o resizeTimer | O navegador dispara muitos eventos de resize em sequência, Para evitar recalcular o slide centenas de vezes, usamos debounce: só rodamos updateSlide() quando o usuário parar de mexer na tela por 50ms
+}); // Vamos utilizar o resizeTimer | O navegador dispara muitos eventos de resize em sequência, para evitar recalcular o slide centenas de vezes, usamos debounce: só rodamos updateSlide() quando o usuário parar de mexer na tela por 50ms
 
-// inicializa
+// Inicializa
 updateSlide();
 startAutoplay();

@@ -1,5 +1,4 @@
 // Categorias dos filmes
-
 const filmes = {
     recomendados: [
         { titulo: "Socorro", img: "./imagens/novidades/n1.jpg", nota: "7.2"},
@@ -104,7 +103,6 @@ function renderFilmes(cat) {
         card.querySelector(".titulo").textContent = lista[i].titulo;
         card.querySelector(".nota").textContent = `⭐${lista[i].nota}`;
         card.querySelector("img").alt = `Capa do filme: ${lista[i].titulo}`;
-        
     })
 }
 
@@ -119,7 +117,7 @@ const categorias = document.querySelector('.fil-rec');
     const categoria = li.dataset.cat
 
     renderFilmes(categoria);
-})} /* closest - A partir de onde o clique aconteceu, encontre o <li> mais próximo acima */ 
+})} /* Closest - A partir de onde o clique aconteceu, encontre o <li> mais próximo acima */ 
 
 window.addEventListener("load", () => renderFilmes("recomendados"));
 
@@ -154,7 +152,5 @@ filCategorias.forEach((listaCategorias) => {
         })
 
         listaCategorias.classList.add('active')
-        
-        /* console.log(listaCategorias.dataset.cat) */
     })
 })

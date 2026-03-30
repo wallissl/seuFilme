@@ -9,22 +9,20 @@
   overflow: hidden;
   position: -webkit-sticky;
   border-radius: 10px;
-
-  
 }
 
 .slides {
   display: flex;
   width: 100%;
-  transition: transform 0.6s ease; /* transição suave ao mexer translateX */
-  will-change: transform; /* Dica para o navegador saber que vai precisar realizar uma determinada animação, mais de uma vez*/
+  transition: transform 0.6s ease; /* Transição suave ao mexer translateX */
+  will-change: transform; /* Dica para o navegador saber que vai precisar realizar uma determinada animação, mais de uma vez */
   border-radius: 10px;
 }
 
 .slide {
-  min-width: 100%; /* cada slide ocupa 100% do container */
+  min-width: 100%; /* Cada slide ocupa 100% do container */
   height: auto;
-  flex-shrink: 0; /* Ótimiza o navegador para realizar a animação sem deixar o flexbox diminuir os itens por padrão*/
+  flex-shrink: 0; /* Ótimiza o navegador para realizar a animação sem deixar o flexbox diminuir os itens por padrão */
   border-radius: 10px;
 }
 
@@ -32,15 +30,15 @@
   width: auto;
   height: 100%;
   object-fit: contain; /* Preencher o espaço disponível sem deformar */
-  display: block; /* Não permitir que o elemento tenha comportamento inline*/
+  display: block; /* Não permitir que o elemento tenha comportamento inline */
   border-radius: 10px;
 }
 
-/* botões */
+/* Botões */
 button.ctrl {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); /*puxa o botão para cima 50% da altura dele mesmo*/
+  transform: translateY(-50%); /* Puxa o botão para cima 50% da altura dele mesmo */
   background: rgba(255,255,255,0.9);
   border: none;
   padding: 8px 12px;
@@ -76,5 +74,5 @@ button.ctrl {
 
 .dot.active {
   opacity: 1;
-  transform: scale(1.15); /* aumenta ou diminui um elemento proporcionalmente, tanto na largura quanto na altura. */
+  transform: scale(1.15); /* Aumenta ou diminui um elemento proporcionalmente, tanto na largura quanto na altura. */
 }

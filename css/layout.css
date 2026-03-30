@@ -9,13 +9,11 @@ body {
     background-color: var(--bg);
 }
 
-
 /* Header */
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
     height: 10vh;
 }
 
@@ -24,7 +22,6 @@ header {
     font-size: 2.2rem;
     font-family: "Bebas Neue", sans-serif;
 }
-
 
 /* Menu Nav e input de busca */
 .nav-busca{
@@ -61,7 +58,6 @@ header {
     box-shadow: 0 0 5px 1px #9c9c9c;
 }
 
-
 /* menu de navegação */
 header nav {
     display: flex;
@@ -93,13 +89,11 @@ margin-top: 15px;
 height: auto;
 }
 
-
 /* Main: Categorias*/
 main {
     margin-top: 1vh;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .fil-rec {
@@ -110,10 +104,6 @@ main {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.253);
     padding: 10px 15px;
-    
-}
-
-.fil-list nav {
     
 }
 
@@ -132,9 +122,7 @@ main {
     display: none;
 }
 
-
 /* Main: Filmes, está em arquivo CSS separado - filmes.css */
-
 
 /* Footer */
 footer {

@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
     width: 100%;
     align-items: center;
     gap: 10px;
@@ -10,7 +9,6 @@
 }
 
 .rec {
-    
     width: 15%;
     aspect-ratio: 3 / 3; /* Define a proporção largura/altura do elemento */
     border-radius: 10px;
@@ -40,7 +38,6 @@
 }
 
 /* Responsividade */
-
 @media (max-width: 1000px) {
     .rec {
         width: 30%; /* 3 imagens por linha*/
@@ -51,4 +48,3 @@
         width: 45%; /* 2 imagens por linha*/
     }
 }
-

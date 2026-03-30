@@ -79,7 +79,7 @@
 .trending-item:nth-child(even) {
     justify-content: flex-end;
     text-align: right;
-} /* Even é uma palavra-chave que significa todos os elementos par*/
+} /* Even é uma palavra-chave que significa todos os elementos par */
 
 
 /* Mobile */

@@ -85,50 +85,11 @@
         pointer-events: all;
     }
 
-    /* Categorias: Mobile */
-    .fil-list {
-        display: flex;
-        overflow: scroll;
-        width: max-content;
-        padding-bottom: 10px;
-        
-    }
-
-    .fil-tit {
-        display: none;
-    }
-
-    .fil-rec {
-        background: none;
-    }
-
-    
-    .lista-categorias li {
-        border-radius: 20px;
-        background: #222;
-        cursor: pointer;
-        padding: 10px 15px;
-        color: var(--texto);
-    }
-
-    .recomendadosMobile {
-        display: block;
-        width: 190px;
-    }
-
-   /*  */
-
-   [data-cat].active{
-        background-color: rgb(250, 250, 250);
-        color: var(--bg);
-    }
-
-   
-    
+    /* Ajustes Carrossel */
     .carousel {
         max-width:1200px;
         width: 100vw;
-        aspect-ratio: 4 / 3; /* controla proporção */
+        aspect-ratio: 4 / 3; /* Controla proporção */
         position: relative;
         overflow: hidden;
         position: -webkit-sticky;
@@ -139,9 +100,10 @@
 
     .slide {
         height: auto;
-        flex-shrink: 0; /* Ótimiza o navegador para realizar a animação sem deixar o flexbox diminuir os itens por padrão*/
+        flex-shrink: 0; /* Otimiza o navegador para realizar a animação sem deixar o flexbox diminuir os itens por padrão */
          border-radius: 10px;
     }
+
     .slide img {
         width: 100vw;
         height: 100%;
@@ -155,7 +117,7 @@
             
     }
 
-        .fil-list::-webkit-scrollbar-track {
+    .fil-list::-webkit-scrollbar-track {
         background: var(--texto); /* Cor da trilha */
         border-radius: 20px;
     }
@@ -165,6 +127,38 @@
         border-radius: 20px; /* Arredondar a barrinha */
         border: 1px solid #e0e0e0; /* Borda ao redor da barrinha */
     }
-}
 
- 
+    /* Categorias: Mobile */
+    .fil-list {
+        display: flex;
+        overflow: scroll;
+        width: max-content;
+        padding-bottom: 10px;
+    }
+
+    .fil-tit {
+        display: none;
+    }
+
+    .fil-rec {
+        background: none;
+    }
+
+    .lista-categorias li {
+        border-radius: 20px;
+        background: #222;
+        cursor: pointer;
+        padding: 10px 15px;
+        color: var(--texto);
+    }
+
+    .recomendadosMobile {
+        display: block;
+        width: 190px;
+    }
+
+   [data-cat].active{
+        background-color: rgb(250, 250, 250);
+        color: var(--bg);
+    }
+} 
